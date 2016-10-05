@@ -1,9 +1,26 @@
 <!DOCTYPE html>
 <html>
 <body BGCOLOR="#FF0000">
-<A NAME = "music">
-<h1>Hello World</h1>
-<h2>COMMUNISM</h2>
+<link href="style.css" rel="stylesheet">
+<A NAME="music">
+<h1>COMMUNISM</h1>
+<img src="letov2.jpg" alt="альтернативный текст"> <br>
+<audio src="grob.mp3" preload="auto" controls></audio> <br>
+<img src="letov1.jpg" alt="альтернативный текст">
 
+<p> music music </p>
+
+<script>
+var t;
+function up() {
+	var top = Math.max(document.body.scrollTop,document.documentElement.scrollTop);
+	if (top > 0) {
+		window.scrollBy(0, -100);
+		t = setTimeout('up()',20);
+	} else clearTimeout(t);
+	return false;
+}
+</script>
+<a href="#" onclick="return up()">наверх</a>
 </body>
 </html>
