@@ -1,5 +1,25 @@
 h1{
 font-size:50px;
 color: #ffff00;
+text-align: center;
 }
-BODY {background-color: #FF0000 }
+BODY {background-color: #FF0000; margin: 0% 33% 0% 33% }
+
+
+img {text-align:center;}
+
+.img34 {
+text-align:center;
+}
+
+<script>
+var t;
+function up() {
+	var top = Math.max(document.body.scrollTop,document.documentElement.scrollTop);
+	if (top > 0) {
+		window.scrollBy(0, -100);
+		t = setTimeout('up()',60);
+	} else clearTimeout(t);
+	return false;
+}
+</script>
